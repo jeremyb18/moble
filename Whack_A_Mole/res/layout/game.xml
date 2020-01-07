@@ -1,0 +1,95 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grass"
+    android:padding="40dp" >
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button6"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button7"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <ImageButton
+        android:id="@+id/button8"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty_hole2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Number of whacks:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
+

@@ -1,0 +1,227 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/currentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Get Current Weather" />
+    
+    <Button
+        android:id="@+id/configButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Configure Location" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp"
+        android:text="Today&apos;s Weather"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/todayImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/nodata" />
+
+    <TextView
+        android:id="@+id/todayCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/todayImage"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/todayImage"
+        android:layout_marginTop="14dp"
+        android:text="Description:" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/todayImage"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/todayImage"
+        android:text="Current Temp:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/todayImage"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Windspeed/Direction:" />
+
+    <TextView
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView1"
+		android:text="N/A" />
+
+
+	<TextView
+	 android:id="@+id/currentWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="N/A" />
+    
+    <TextView
+        android:id="@+id/textView2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/todayCond"
+        android:layout_marginTop="18dp"
+        android:text="Tomorrow&apos;s Weather"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/tomorrowImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2a"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/nodata" />
+
+    <TextView
+        android:id="@+id/tommorowCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tomorrowImage"
+        android:layout_alignRight="@+id/textView2a"
+        android:layout_below="@+id/tomorrowImage"
+        android:layout_marginTop="14dp"
+        android:text="Description:" />
+
+    <TextView
+        android:id="@+id/textView1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tomorrowImage"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/tomorrowImage"
+        android:text="Hi/Lo:" />
+
+    <TextView
+        android:id="@+id/textView3a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tomorrowImage"
+        android:layout_alignLeft="@+id/textView1a"
+        android:text="Windspeed/Direction:" />
+
+    <TextView
+        android:id="@+id/tomorrowTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tomorrowImage"
+        android:layout_alignBottom="@+id/textView1a"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/textView1a"
+        android:text="N/A" />
+
+
+    <TextView
+        android:id="@+id/tommorowWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3a"
+        android:layout_alignBottom="@+id/textView3a"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView3a"
+        android:text="N/A" />
+    
+     <TextView
+        android:id="@+id/textView2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tommorowCond"
+        android:layout_marginTop="18dp"
+        android:text="Next Day Weather"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginLeft="5dp"/>
+
+    <ImageView
+        android:id="@+id/nextImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2b"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/nodata" />
+
+    <TextView
+        android:id="@+id/nextCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nextImage"
+        android:layout_alignRight="@+id/textView2b"
+        android:layout_below="@+id/nextImage"
+        android:layout_marginTop="14dp"
+        android:text="Description:" />
+
+    <TextView
+        android:id="@+id/textView1b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nextImage"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/nextImage"
+        android:text="Hi/Lo:" />
+
+    <TextView
+        android:id="@+id/textView3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nextImage"
+        android:layout_alignLeft="@+id/textView1b"
+        android:text="Windspeed/Direction:" />
+
+    <TextView
+        android:id="@+id/nextTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1b"
+        android:layout_alignBottom="@+id/textView1b"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/textView1b"
+        android:text="N/A" />
+
+
+    <TextView
+        android:id="@+id/nextWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3b"
+        android:layout_alignBottom="@+id/textView3b"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView3b"
+        android:text="N/A" />
+
+</RelativeLayout>
